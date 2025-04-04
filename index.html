@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Content Access</title>
+    <title>Simple Link Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -31,7 +31,6 @@
         p {
             font-size: 18px;
             margin: 20px 0;
-            color: #555;
         }
         .link-button {
             display: inline-block;
@@ -42,54 +41,17 @@
             border-radius: 4px;
             font-weight: bold;
             transition: background-color 0.3s;
-            margin: 10px;
         }
         .link-button:hover {
             background-color: #3367D6;
-        }
-        .github-button {
-            background-color: #2EA44F;
-        }
-        .github-button:hover {
-            background-color: #2C974B;
-        }
-        .button-container {
-            margin-top: 30px;
-        }
-        .disclaimer {
-            font-size: 14px;
-            color: #777;
-            margin-top: 30px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to Your Resource</h1>
-        <p>Choose your preferred access method:</p>
-        
-        <div class="button-container">
-            <!-- GitHub Pages link -->
-            <a class="link-button github-button" href="https://sismbd.github.io/notice/" target="_blank">
-                View on GitHub Pages
-            </a>
-            
-            <!-- Original Google Apps Script link -->
-            <a class="link-button" href="https://script.google.com/macros/s/AKfycbyGc9wlY5lf8MyvJ1R3pYqOJnzRvvSQFPTMHl8EDqS1aQvL8_tqSJ5eiawRlPd0H7HPiw/exec" target="_blank">
-                View Original Source
-            </a>
-        </div>
-        
-        <p class="disclaimer">The GitHub Pages version provides the same content without any system messages.</p>
+        <p>Click the button below to access the content:</p>
+        <a class="link-button" href="https://script.google.com/macros/s/AKfycbyGc9wlY5lf8MyvJ1R3pYqOJnzRvvSQFPTMHl8EDqS1aQvL8_tqSJ5eiawRlPd0H7HPiw/exec">Access Content</a>
     </div>
-
-    <script>
-        // Automatically redirect to the GitHub Pages link after a short delay
-        window.onload = function() {
-            setTimeout(function() {
-                window.location.href = "https://sismbd.github.io/notice/";
-            }, 1500); // 1.5 seconds delay
-        };
-    </script>
 </body>
 </html>
